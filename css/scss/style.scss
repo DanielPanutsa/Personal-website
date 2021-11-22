@@ -20,6 +20,13 @@ $fontmono: 'Roboto Mono', monospace;
 	text-align: center;
 	position: relative;
 	z-index: 99;
+	& .bg{
+		height: inherit;
+		width: auto;
+		background-color: rgba(51, 51, 51, .15);
+		position: absolute;
+    	top: 0;
+	}
 	& *{
 		color: #fff;
 	}
