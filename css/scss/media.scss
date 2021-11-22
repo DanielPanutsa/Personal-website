@@ -1,0 +1,450 @@
+$colorye: #f1c11a;
+$colorbl: #393939;
+$colorgray: #999;
+$colorwhite: #f2f3f5;
+
+@media (min-width: 1600px) {
+	.container{
+		max-width: 1200px;
+	}
+}
+
+@media (max-width: 1366px) {
+	.container{
+		max-width: 1100px;
+		padding: 0px 15px;
+	}
+}
+
+@media (max-width: 	1024px) {
+	.container{
+		max-width: 860px;
+	}
+	.btn{
+		font-size: 22px;
+		.form &{
+			font-size: 22px;
+		}
+	}
+	.promo{
+		padding-bottom: 0;
+		& .haeding{
+			font-size: 52px;
+		}
+		& .text {
+			font-size: 26px;
+		}
+		& .buttons{
+			font-size: 22px;
+		}
+	}
+	.menu__burger{
+		display: flex;
+	}
+	.header{
+		&__link{
+			display: none;
+			opacity: 0;
+			margin: 0 auto;
+    		width: 20%;
+    		background-color: $colorye;
+			transition: all .5s ease;
+			&:nth-child(3){
+				border: 0;
+				opacity: 1;
+				position: absolute;
+				top: 20px;
+				left: 30px;
+				display: block;
+			}
+    		&s.active{
+    			padding: 10px 0;
+				transition: all .5s ease;
+    			& .header__link{
+    				margin: 0;
+    				display: block;
+    				opacity: 1;
+    				font-size: 30px;
+					position: absolute;
+					width: 100%;
+					left: 0;
+					z-index: 50;
+					transition: all .5s ease;
+    				&:first-child{
+						top: 80px;
+					}
+					&:nth-child(2){
+						top: 145px;
+					}
+					&:nth-child(4){
+						top: 210px;
+					}
+					&:nth-child(5){
+						top: 275px;
+					}
+					&:nth-child(3){
+						border: 0;
+						left: 30px;
+						.header__scrolled &{
+		    				top: 40px;
+		    				left: 90px;
+		    			}
+					}
+    			}
+    		}
+			&s{
+				height: 80px;
+				position: relative;
+				flex-direction: column;
+				text-align: center;
+				transition: all .5s ease;
+			}
+		}
+	}
+	html, body{
+		font-size: 18px;
+	}
+	.about{
+		&__block{
+			&s{
+				flex-direction: column;
+				& > div{
+					width: auto;
+					margin: 0 auto;
+					margin-bottom: 50px;
+				}
+			}
+			& .bg__img{
+				width: 80%;
+				& .img{
+					width: 80%;
+					max-width: 80%;
+				}
+			}
+		}
+	}
+	.block{
+		&__text{
+			width: auto;
+			& .heading{
+				font-size: 46px;
+			}
+		}
+	}
+	.blog__block{
+		margin: 30px 15px;
+	}
+	.btn{
+		font-size: 21px;
+	}
+	.heading{
+		font-size: 46px;
+	}
+	.text{
+		font-size: 18px;
+	}
+	.row{
+		flex-direction: column;
+	}
+	.services{
+		&__block{
+			margin: 0;
+			padding: 15px 0;
+			margin-bottom: 40px;
+			& .icon{
+				height: 80px;
+				width: 80px;
+			}
+			& .heading{
+				font-size: 28px;
+			}
+			& p{
+				font-size: 18px;
+			}
+		}
+	}
+	.portofolio .row:nth-child(2){
+		flex-direction:column;
+	}
+	.portofolio .block__site {
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 60px;
+	}
+	.blog{
+		&__block{
+			width: auto;
+			margin: 30px 15px;
+			&s{
+				flex-direction: column;
+			}
+			& .row:first-child{
+				margin: 0;
+			}
+		}
+	}
+	.post-info{
+		& h4{
+			font-size: 30px;
+		}
+		& p{
+			font-size: 18px;
+		}
+		& .author{
+			font-size: 16px;
+		}
+	}
+	.fr{
+		flex-direction: column;
+	}
+	.form__item{
+		& input{
+			&::placeholder{
+				font-size: 20px;
+			}
+		}
+	}
+	.form__group{
+		& textarea{
+			&::placeholder{
+				font-size: 20px;
+			}
+		}
+	}
+	.contact .m0a .btn{
+		margin: 0 auto;
+		margin-top: 40px;
+	}
+	.footer .links a{
+		font-size: 22px;
+		padding: 0px 10px;
+	}
+	.footer .text{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 	834px) {
+	.container{
+		max-width: 720px;
+	}
+	.block__text{
+		& .btn{
+			width: 50%;
+			margin: 0 auto;
+		}
+	}
+	.promo{
+		& .heading{
+			font-size: 30px;
+		}
+		& .text{
+			font-size: 20px;
+		}
+		& .buttons{
+			font-size: 16px;
+		}
+	}
+	.menu__burger > div{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container{
+		max-width: auto;
+		margin-left: 15px;
+	}
+	.row{
+		margin-left: -15px;
+	}
+	.row .heading, .row .text{
+		margin-left: 15px;
+	}
+	.form{
+		width: auto;
+		margin: 0px 15px;
+		padding: 30px 10px;
+	}
+	.about, .services, .portofolio, .blog{
+		padding: 0;
+	}
+	.contact{
+		padding: 35px 0;
+	}
+	.about__blocks, .services__blocks{
+		padding: 0;
+		padding-top: 35px;
+	}
+	.blog .row:first-child{
+		margin: 0;
+	}
+	.block__text{
+		& p{
+			font-size: 18px;
+		}
+		& .btn{
+			font-size: 20px;
+		}
+	}
+	.form{
+		&__item{
+			& input{
+				font-size: 12px;
+				&::placeholder{
+					font-size: 12px;
+				}
+			}
+		}
+		&__group{
+			& textarea {
+				font-size: 12px;
+				&::placeholder{
+					font-size: 12px;
+				}
+			}
+		}
+		& .btn{
+			font-size: 18px;
+		}
+	}
+	.post-info{
+		& h4{
+			font-size: 18px;
+		}
+		& p{
+			font-size: 14px;
+		}
+	}
+	.text{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 667px) {
+	.promo .button{
+		margin: 0 auto;
+		width: 50%;
+		margin-bottom: 20px;
+		&s{
+			flex-direction: column;
+		}
+	}
+	.promo .text{
+		text-transform: capitalize;
+	}
+	.row{
+		margin-left: 0px;
+	}
+	.block__img .img,.block__img .bg_img{
+		width: 500px;
+		height: 400px;
+	}
+	.header__links.active .header__link{
+		font-size: 22px;
+		&:nth-child(2){
+			top: 131px;
+		}
+		&:nth-child(4){
+			top: 182px;
+		}
+		&:nth-child(5){
+			top: 233px;
+		}
+	}
+	.row .heading{
+		font-size: 25px;
+	}
+	.row p{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 568px) {
+	.container{
+		margin: 0;
+	}
+	.block__img .img, .block__img .bg_img {
+    	width: 350px;
+    	height: 250px;
+	}
+	.about__blocks > div{
+		margin: 0;
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 414px) {
+	.header__link:nth-child(3){
+		& .circle{
+			width: 90px;
+			height: 90px;
+			top: -20px;
+			left: -95px;
+		}
+		& .img{
+			top: -5px;
+			left: -75px;
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	.active .header__link:nth-child(3){
+		& .img {
+	    	left: -5px;
+	    }
+	    & .circle{
+	    	left: -25px;
+	    }
+	}
+	.header__scrolled .header__link:nth-child(3){
+		& .img {
+	    	left: -75px;
+	    }
+	    & .circle{
+	    	left: -95px;
+	    }
+	}
+}
+
+@media (max-width: 375px) {
+	.block__img .img,.block__img .bg_img{
+		width: 250px;
+		height: 150px;
+	}
+}
+
+@media (max-width: 320px) {
+	.block__img .img, .block__img .bg_img {
+	    width: 150px;
+	    height: 150px;
+	}
+	.form .btn{
+		width: auto;
+		padding: 0;
+	}
+	.row{
+		margin: 0;
+	}
+	.row .heading{
+		margin: 0;
+	}
+	.row .text{
+		margin: 0;
+	}
+	.block__text{
+		& p{
+		font-size: 13px;
+		}
+		& .btn{
+			padding: 0;
+		}
+	}
+	.menu__burger{
+		right: 5px;
+	}
+	.promo .button{
+		width: auto;
+	}
+}
