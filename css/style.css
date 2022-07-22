@@ -266,15 +266,15 @@ body {
 
 .menu__burger {
   border: 1px solid #fafafa;
-  border-radius: 10%;
-  padding: 7px;
+  border-radius: 15px;
+  padding: 14px;
   display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   position: absolute;
-  top: calc((80px - 29px) / 2)-15px;
+  /*top: calc((80px - 29px) / 2)-15px;*/
   right: 30px;
 }
 .menu__burger > div {
